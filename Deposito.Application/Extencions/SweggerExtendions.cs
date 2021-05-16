@@ -7,7 +7,6 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.IO;
 
-
 namespace Deposito.Application.Extencions
 {
     public static class SweggerExtendions

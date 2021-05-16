@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Deposito.Application.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ClienteController : ControllerBase
