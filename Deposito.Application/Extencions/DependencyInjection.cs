@@ -24,13 +24,13 @@ namespace Deposito.Application.Extencions
         public static void DependencyInjectionServices(IServiceCollection services)
         {
             services.AddTransient<IClienteServices, ClienteServices>();
-            //services.AddTransient<IUsuarioServices, UsuarioServices>();
+            services.AddTransient<IProdutoServices, ProdutoServices>();
         }
 
         public static void DependencyInjectionBusiness(IServiceCollection services)
         {
             services.AddTransient<IClienteBusiness, ClienteBusiness>();
-            //services.AddTransient<IUsuarioBusiness, UsuarioBusiness>();
+            services.AddTransient<IProdutoBusiness, ProdutoBusiness>();
         }
 
         public static void DependencyInjectionInfrastructure(IServiceCollection services)
@@ -40,7 +40,7 @@ namespace Deposito.Application.Extencions
         public static void DependencyInjectionRepository(IServiceCollection services)
         {
             services.AddSingleton<IClienteRepository, ClienteRepository>();
-            //services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
+            services.AddSingleton<IProdutoRepository, ProdutoRepository>();
         }
     }
 }

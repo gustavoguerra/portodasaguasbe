@@ -3,7 +3,7 @@
     public class ClienteViewModel
     {
         public int id { get; set; }
-        public string ClineteNome { get; set; }
+        public string ClienteNome { get; set; }
         public string ClienteCep { get; set; }
         public string ClienteRua { get; set; }
         public string ClienteNumero { get; set; }

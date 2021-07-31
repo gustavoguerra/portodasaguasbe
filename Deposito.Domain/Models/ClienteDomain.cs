@@ -1,8 +1,11 @@
-﻿namespace Deposito.Domain.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Deposito.Domain.Models
 {
+    [Table("DepositoCliente")]
     public class ClienteDomain : Entity
     {
-        public string ClineteNome { get; set; }
+        public string ClienteNome { get; set; }
         public string ClienteCep { get; set; }
         public string ClienteRua { get; set; }
         public string ClienteNumero { get; set; }

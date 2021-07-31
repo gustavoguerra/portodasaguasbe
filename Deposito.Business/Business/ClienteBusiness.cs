@@ -54,7 +54,12 @@ namespace Deposito.Business.Business
 
         private void CheckedCliente(ClienteDomain ClienteObj = null, IEnumerable<ClienteDomain> ListClientObj = null)
         {
-            var listaCloente = ListClientObj.ToList();
+            var listaCloente = new List<ClienteDomain>();
+
+            if (ListClientObj != null)
+            {
+                 listaCloente = ListClientObj.ToList();
+            }
 
             if(ClienteObj != null)
             {
@@ -63,7 +68,7 @@ namespace Deposito.Business.Business
 
             foreach (var obj in listaCloente)
             {
-                DomainException.When(string.IsNullOrEmpty(obj.ClineteNome), ErrorMessages.CLIENTENOME);
+                DomainException.When(string.IsNullOrEmpty(obj.ClienteNome), ErrorMessages.CLIENTENOME);
                 DomainException.When(string.IsNullOrEmpty(obj.ClienteCep), ErrorMessages.CEP);
                 DomainException.When(string.IsNullOrEmpty(obj.ClienteRua), ErrorMessages.LOGRADOURO);
                 DomainException.When(string.IsNullOrEmpty(obj.ClienteNumero), ErrorMessages.NUMERO);

@@ -9,7 +9,7 @@ namespace Deposito.Application.AutoMapper.Profiles
         public DomainToViewModel()
         {
             CreateMap<ClienteDomain, ClienteViewModel>();
-            //CreateMap<LoginDomain, LoginViewModel>();
+            CreateMap<ProdutoDomain, ProdutoViewModel>();
             //CreateMap<FuncionarioDomain, FuncionarioViewModel>();
             //CreateMap<EnderecoDomain, EnderecoViewModel>();
             //CreateMap<TipoEmpresaDomain, TipoEmpresaViewModel>();

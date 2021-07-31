@@ -26,5 +26,9 @@ namespace Deposito.Domain
         //Cliente
         public const string CLIENTENOME = "Nome do cliente obrigatorio !";
         public const string CLIENTETELEFONE = "Telefone obrigatorio !";
+
+        //Produto
+        public const string PRODUTONOME = "Nome do produto é obrigatorio !";
+        public const string PRODUTOVALOR = "Valor do produto é obrigatorio !";
     }
 }
